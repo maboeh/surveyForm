@@ -3,11 +3,18 @@ body {
     padding: 0;
     background: -webkit-linear-gradient(180deg, blue, lightblue);
     display: grid;
-    grid-template-columns: 25% auto 25%;
-    grid-template-rows: 10% auto 10%;
-    height: 1000px;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 10% 80% 10%;
+    height: 1400px;
+}
+.left{
+    text-align: right;
+    padding:.2rem;
 }
 
+.right{
+    padding:.2rem;
+}
 #title {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -18,9 +25,10 @@ body {
 #container {
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 5% 20% 5% 18% 5% 42% 5%;
+    grid-template-rows: 6% 20% 5% 18% 5% 41% 5%;
     grid-row: 2/3;
     grid-column: 2/ 3;
+    grid-gap:1%;
     background-color: #FCFFCD;
     border: 1px solid #FCFFCD;
     padding: 1rem;
@@ -35,22 +43,31 @@ body {
 #main {
     grid-column: 2/3;
     grid-row: 2/3;
-    display: inline-flex;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3,33px);
+    grid-gap: 15px;
     justify-content: center;
-    align-items: center;
-    /* flex-direction: column; */
+    align-content: center;
+}
+.i-text{
+    width:70%;
+}
+.i-select{
+    width:50%;
 }
 
-#main label {
-    float: left;
-}
 
-#main input {}
 
 #role {
     grid-column: 2/3;
     grid-row: 3/4;
     margin: .4rem;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33px;
+    justify-content: center;
+    align-content: center;
 }
 
 #radio {
