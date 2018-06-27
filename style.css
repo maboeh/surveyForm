@@ -2,10 +2,12 @@ body {
     margin: 0;
     padding: 0;
     background: -webkit-linear-gradient(180deg, blue, lightblue);
-    display: grid;
+    /* display: grid;
     grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 10% 80% 10%;
-    height: 1400px;
+    grid-template-rows: 10% 80% 10%; */
+    display: flex;
+    flex-direction: column;
+   
 }
 .left{
     text-align: right;
@@ -16,8 +18,8 @@ body {
     padding:.2rem;
 }
 #title {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    /* grid-column: 2/3;
+    grid-row: 1/2; */
     text-align: center;
     font-size: 3rem;
 }
@@ -25,13 +27,15 @@ body {
 #container {
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 6% 20% 5% 18% 5% 41% 5%;
-    grid-row: 2/3;
-    grid-column: 2/ 3;
-    grid-gap:1%;
+    grid-template-rows: 6% 20% 5% 18% 5% 33% 8% 5%;
+    /* grid-row: 2/3;
+    grid-column: 2/ 3; */
+    grid-gap:.5rem;
     background-color: #FCFFCD;
     border: 1px solid #FCFFCD;
-    padding: 1rem;
+    width:50%;
+    margin:2rem auto;
+    
 }
 
 #description {
@@ -41,14 +45,9 @@ body {
 }
 
 #main {
-    grid-column: 2/3;
     grid-row: 2/3;
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3,33px);
-    grid-gap: .7rem;
-    justify-content: center;
-    align-content: center;
+    grid-template-rows: repeat(3,2.4rem);
+    
 }
 .i-text{
     width:70%;
@@ -60,48 +59,69 @@ body {
 
 
 #role {
-    grid-column: 2/3;
     grid-row: 3/4;
-    margin: .4rem;
-    grid-gap:.7rem;
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 33px;
-    justify-content: center;
-    align-content: center;
+    grid-template-rows: 2.4rem;
+    
 }
 
 #radio {
     grid-row: 4/5;
-    grid-column: 2/3;
-    grid-gap: .7rem;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 110px;
-    display:grid;
-    justify-content: center;
-    align-content: center
+    grid-template-rows: 5.8rem;
+    
 }
 li{
     list-style: none;
+    margin: .3rem;
 
 }
 ul{
     margin-top:0;
     
 }
+textarea{
+    width:80%;
+    height: 70%;
+    margin:.2rem;
+}
 #like{
-    display: grid;
-    grid-column: 2/3;
+    
     grid-row:5/6;
-    grid-gap:.7rem;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 33px;
+    grid-template-rows: 2.4rem;
 }
 #check{
+    
+    grid-row:6/7;
+    grid-template-rows: 19rem;
+    
+}
+#subForm{
+   
+    grid-row:7/8;
+    grid-template-rows: 7rem;
+}
+#subbtn{
     display: grid;
     grid-column: 2/3;
+    grid-row: 8/9;
+    grid-gap:.5rem;
+
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: 2rem;  
+    justify-content: center;
+    align-items: center;  
+}
+#subbtn button{
+    grid-column: 2/3;
+    width:50%;
+    justify-self: center;
+
+}
+
+.surveyGrid{
+    display: grid;
+    grid-column: 2/3;
+    grid-gap: .7rem;
     grid-template-columns: 50% 50%;
-    grid-row:6/7;
-    grid-gap:.7rem;
-    
+    justify-content: center;
+    align-content: center
 }

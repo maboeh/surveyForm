@@ -15,7 +15,7 @@
 
   <div id="container">
     <p id="description">Please let us know how we can improve your experience with freeCodeCamp</p>
-    <form id="main">
+    <form id="main" class="surveyGrid">
       <label class="left">Name</label>
       <input class="right i-text" type="text">
       <label class="left">Email</label>
@@ -26,14 +26,14 @@
 
     </form>
 
-    <form id="role">
+    <form id="role" class="surveyGrid">
       <label class="left">Which option best describes your current role?</label>
       <select class="right i-select">
         <option>Student</option>
       </select>
     </form>
 
-    <form id="radio">
+    <form id="radio" class="surveyGrid">
       <label class="left">How likely is that you would recommend freeCodeCamp to a friend?</label>
       <ul class="right">
         <li>
@@ -49,14 +49,14 @@
        
     </form>
 
-    <form action="" id="like">
+    <form action="" id="like" class="surveyGrid">
       <label class="left">What do you like most in FCC:</label>
       <select  class="right i-select">
         <option  >Select an option</option>
       </select>
     </form>
 
-    <form action="" id="check">
+    <form action="" id="check" class="surveyGrid">
 
       <label  class="left">Things that should be improved in the future (Check all that apply):</label>
       <ul class="right">
@@ -72,16 +72,46 @@
       <input type="checkbox" >Data Visualization
 
         </li>
+        <li>
+      <input type="checkbox" >Challenges
+
+        </li>
+        <li>
+      <input type="checkbox" >Open Source Community
+
+        </li>
+        <li>
+      <input type="checkbox" >Gitter help rooms
+
+        </li>
+        <li>
+      <input type="checkbox" >Videos
+
+        </li>
+        <li>
+      <input type="checkbox" >City Meetups
+
+        </li>
+        <li>
+      <input type="checkbox" >Wiki
+
+        </li>
+        <li>
+      <input type="checkbox" >Forum
+
+        </li>
       </ul>
-      <input type="checkbox" class="right">Challenges
-      <input type="checkbox" class="right">Open Source Community
-      <input type="checkbox" class="right">Gitter help rooms
-      <input type="checkbox" class="right">Videos
-      <input type="checkbox" class="right">City Meetups
-      <input type="checkbox" class="right">Wiki
-      <input type="checkbox" class="right">Forum
 
     </form>
+
+    <form id="subForm" class="surveyGrid">
+      <label class="left">Any Comments or Suggestions?</label>
+      <textarea class="right" cols="30" rows="10"></textarea>
+    </form>
+
+    <div id="subbtn" >
+      <button type="submit">Submit</button>
+    </div>
 
   </div>
 
