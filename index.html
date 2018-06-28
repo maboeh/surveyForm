@@ -15,11 +15,11 @@
 
   <div id="container">
     <p id="description">Please let us know how we can improve your experience with freeCodeCamp</p>
-    <form id="main" class="surveyGrid">
+    <form id="survey-form" class="surveyGrid">
       <label class="left">Name</label>
-      <input class="right i-text" type="text">
+      <input id="name" class="right i-text" type="text">
       <label class="left">Email</label>
-      <input class="right i-text" type="email">
+      <input id="email" class="right i-text" type="email">
 
       <label class="left">Age</label>
       <input class="right i-text" type="text">
@@ -28,7 +28,7 @@
 
     <form id="role" class="surveyGrid">
       <label class="left">Which option best describes your current role?</label>
-      <select class="right i-select">
+      <select id="dropdown" class="right i-select">
         <option>Student</option>
       </select>
     </form>
@@ -37,13 +37,13 @@
       <label class="left">How likely is that you would recommend freeCodeCamp to a friend?</label>
       <ul class="right">
         <li>
-            <input type="radio">Definitely
+            <input type="radio" name="like" value="definitely">Definitely
       </li>
       <li>
-          <input type="radio">Maybe
+          <input type="radio" name="like" value="maybe">Maybe
       </li>
          <li>
-            <input type="radio">Not sure
+            <input type="radio" name="like" value="notsure">Not sure
          </li>
       </ul>
        
@@ -106,11 +106,11 @@
 
     <form id="subForm" class="surveyGrid">
       <label class="left">Any Comments or Suggestions?</label>
-      <textarea class="right" cols="30" rows="10"></textarea>
+      <textarea class="right" cols="30" rows="10" placeholder="Enter a comment here..."></textarea>
     </form>
 
     <div id="subbtn" >
-      <button type="submit">Submit</button>
+      <button id="submit" type="submit">Submit</button>
     </div>
 
   </div>

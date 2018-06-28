@@ -44,7 +44,7 @@ body {
     text-align: center;
 }
 
-#main {
+#survey-form {
     grid-row: 2/3;
     grid-template-rows: repeat(3,2.4rem);
     
